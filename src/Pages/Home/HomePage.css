@@ -1,0 +1,112 @@
+.full {
+    background-color: #0564ff;
+    width: 100%;
+    height: 100%;
+}
+.main {
+    background: linear-gradient(283deg, #0564ff, #db3d44);
+background-size: 400% 400%;
+
+-webkit-animation: AnimationName 30s ease infinite;
+-moz-animation: AnimationName 30s ease infinite;
+animation: AnimationName 30s ease infinite;
+width: 100%;
+height: 100%;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+  .circle {
+      border-radius: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      margin-top: 25px;
+      margin-bottom: 25px;
+  }
+  .balanced {
+    padding-top: 50px;
+    height: 100%;
+  }
+h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    text-align: center;
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:
+    typing 3.5s steps(50, end),
+    blink-caret .75s step-end infinite;
+}
+h2 {
+    letter-spacing: .12em;
+    text-align: center;
+
+    opacity: 0;
+    animation:fade-in 1s 1;
+    -webkit-animation:fade-in 1s 1;
+    animation-fill-mode: forwards;
+
+    animation-delay:3s;
+    -webkit-animation-delay:3s; /* Safari and Chrome */
+    -webkit-animation-fill-mode: forwards;
+}
+@keyframes fade-in{
+    from {opacity :0;}
+    to {opacity :1;}
+}
+
+@-webkit-keyframes fade-in{
+    from {opacity :0;}
+    to {opacity :1;}
+}
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  /* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+.box {
+    background-color: #f3f3f3;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 200px 0px #81d4fa;
+}
+.buttons {
+    padding-top: 100px;
+    margin: auto;
+    text-align: center;
+}
+.button {
+    border-radius: 50px;
+    background-color: #f3f3f3;
+    border: none;
+    padding: 15px 32px;
+    color: #222;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }

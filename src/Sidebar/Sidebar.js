@@ -12,14 +12,20 @@ import { home } from 'react-icons-kit/icomoon/home'
 import { link } from 'react-icons-kit/icomoon/link'
 import { wrench } from 'react-icons-kit/icomoon/wrench'
 import { pacman } from 'react-icons-kit/icomoon/pacman'
+import { phone } from 'react-icons-kit/icomoon/phone'
+import { fileText } from 'react-icons-kit/icomoon/fileText'
+import HomePage from '../Pages/Home/HomePage'
+import CalculateSnowdays from '../Pages/Projects/CalculateSnowdays/CalculateSnowdays';
+import './Sidebar.css';
 // Be sure to include styles at some point, probably during your bootstraping
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 const Main = styled.main`
     position: relative;
     overflow: hidden;
     transition: all .15s;
-    padding: 0 20px;
+    padding: 0px;
     margin-left: ${props => (props.expanded ? 240 : 64)}px;
+    width: calc(100% - ${props => (props.expanded ? 240 : 64)}px);
 `;
 
 export default class extends PureComponent {
@@ -37,10 +43,8 @@ export default class extends PureComponent {
 
   pageTitle = {
     'home': 'Home',
-    'devices': ['Devices'],
-    'reports': ['Reports'],
-    'settings/policies': ['Settings', 'Policies'],
-    'settings/network': ['Settings', 'Network']
+    'projects/calculatesnowdays': ['Projects', 'Snow Day Predictor'],
+    'projects/others': ['Projects', 'Others']
   };
 
   renderBreadcrumbs() {
@@ -54,7 +58,7 @@ export default class extends PureComponent {
             active={index === list.length - 1}
             key={`${selected}_${index}`}
           >
-            {item}
+
           </Breadcrumbs.Item>
         ))}
       </Breadcrumbs>
@@ -69,14 +73,9 @@ export default class extends PureComponent {
     const { expanded, selected } = this.state;
 
     return (
-      <div>
-        <div
-          style={{
-            marginLeft: expanded ? 240 : 64,
-            padding: '15px 20px 0 20px'
-          }}
-        >
-          {/* <ButtonGroup>
+      <div className="fulldiv">
+
+        {/* <ButtonGroup>
             <Button btnStyle="flat" onClick={this.navigate('home')}>
               Home
                         </Button>
@@ -100,7 +99,6 @@ export default class extends PureComponent {
               </Dropdown.Menu>
             </Dropdown>
           </ButtonGroup> */}
-        </div>
         <SideNav onSelect={this.onSelect} onToggle={this.onToggle}>
           <SideNav.Toggle />
           <SideNav.Nav selected={selected}>
@@ -108,27 +106,11 @@ export default class extends PureComponent {
               <NavIcon>
                 <div style={{ color: '#D3D3D3' }}>
                   <Icon size={24} icon={home} />
-                </div> />
+                </div>
               </NavIcon>
               <NavText style={{ paddingRight: 32 }} title="Home">
                 Home
               </NavText>
-            </NavItem>
-            <NavItem eventKey="links">
-              <NavIcon>
-                <i className="fa fa-fw fa-line-chart" style={{ fontSize: '1.75em', verticalAlign: 'middle' }} />
-              </NavIcon>
-              <NavText style={{ paddingRight: 32 }} title="Devices">
-                Devices
-                            </NavText>
-            </NavItem>
-            <NavItem eventKey="reports">
-              <NavIcon>
-                <i className="fa fa-fw fa-list-alt" style={{ fontSize: '1.75em', verticalAlign: 'middle' }} />
-              </NavIcon>
-              <NavText style={{ paddingRight: 32 }} title="Reports">
-                Reports
-                            </NavText>
             </NavItem>
             <NavItem eventKey="projects">
               <NavIcon>
@@ -144,16 +126,47 @@ export default class extends PureComponent {
                   Snow Day Predictor
                                 </NavText>
               </NavItem>
+              <NavItem eventKey="projects/website">
+                <NavText title="Website">
+                  Personal Website
+                                </NavText>
+              </NavItem>
               <NavItem eventKey="projects/others">
                 <NavText title="Others">
                   Others
                                 </NavText>
               </NavItem>
             </NavItem>
+            <NavItem eventKey="resume">
+              <NavIcon>
+                <div style={{ color: '#D3D3D3' }}>
+                  <Icon size={24} icon={fileText} />
+                </div>
+              </NavIcon>
+              <NavText style={{ paddingRight: 32 }} title="Resume">
+                Resume
+              </NavText>
+            </NavItem>
+            <NavItem eventKey="contact">
+              <NavIcon>
+                <div style={{ color: '#D3D3D3' }}>
+                  <Icon size={24} icon={phone} />
+                </div>
+              </NavIcon>
+              <NavText style={{ paddingRight: 32 }} title="Contact">
+                <a href="mailto:cnnr252@gmail.com">Contact Me</a>
+              </NavText>
+            </NavItem>
           </SideNav.Nav>
         </SideNav>
-        <Main expanded={expanded}>
-          {this.renderBreadcrumbs()}
+        <Main className="fullmain" expanded={expanded}>
+          {this.state.selected == 'home' &&
+            <HomePage />
+          }
+          {this.state.selected == 'projects/calculatesnowdays' &&
+            <CalculateSnowdays />
+          }
+          {/* {this.state.selected} */}
         </Main>
       </div>
     );

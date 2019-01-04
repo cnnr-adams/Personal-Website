@@ -38,3 +38,13 @@
 .navbar-brand > img {
   display: block;
 }
+.right {
+  float: right;
+  padding: 5px 5px;
+}
+.nodec {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #000000;
+}

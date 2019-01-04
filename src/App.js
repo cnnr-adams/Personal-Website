@@ -26,12 +26,7 @@ class App extends React.Component {
                         height: 'calc(100vh - 50px)'
                     }}
                 >
-                    {this.state.theme === 'default' &&
-                        <SideNav />
-                    }
-                    {this.state.theme === 'styled' &&
-                        <SideNav />
-                    }
+                    <SideNav />
                 </div>
             </div>
         );
