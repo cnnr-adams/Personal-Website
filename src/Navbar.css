@@ -1,0 +1,40 @@
+.topbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f8f8f8;
+  min-height: 50px;
+  position: relative;
+  border: 1px solid #e7e7e7;
+  display: block;
+  border-top: 0;
+}
+.title {
+  margin-left: -15px;
+  color: #777;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+}
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-brand:focus {
+  text-decoration: none;
+}
+.navbar-brand > img {
+  display: block;
+}
