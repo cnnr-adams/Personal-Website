@@ -1,21 +1,18 @@
 import React, { PureComponent } from 'react';
-import { Button, ButtonGroup } from '@trendmicro/react-buttons';
 import Breadcrumbs from '@trendmicro/react-breadcrumbs';
-import Dropdown, { MenuItem } from '@trendmicro/react-dropdown';
 import ensureArray from 'ensure-array';
-import logo from '../logo.svg';
 import '../App.css';
 import styled from 'styled-components';
-import SideNav, { Toggle, Nav, NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
+import SideNav, { NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
 import { Icon } from 'react-icons-kit'
 import { home } from 'react-icons-kit/icomoon/home'
-import { link } from 'react-icons-kit/icomoon/link'
-import { wrench } from 'react-icons-kit/icomoon/wrench'
 import { pacman } from 'react-icons-kit/icomoon/pacman'
-import { phone } from 'react-icons-kit/icomoon/phone'
 import { fileText } from 'react-icons-kit/icomoon/fileText'
 import HomePage from '../Pages/Home/HomePage'
 import CalculateSnowdays from '../Pages/Projects/CalculateSnowdays/CalculateSnowdays';
+import PersonalWebsite from '../Pages/Projects/PersonalWebsite/PersonalWebsite';
+import Others from '../Pages/Projects/Others/Others';
+import Resume from '../Pages/Resume/Resume';
 import './Sidebar.css';
 // Be sure to include styles at some point, probably during your bootstraping
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
@@ -74,31 +71,6 @@ export default class extends PureComponent {
 
     return (
       <div className="fulldiv">
-
-        {/* <ButtonGroup>
-            <Button btnStyle="flat" onClick={this.navigate('home')}>
-              Home
-                        </Button>
-            <Button btnStyle="flat" onClick={this.navigate('devices')}>
-              Devices
-                        </Button>
-            <Button btnStyle="flat" onClick={this.navigate('reports')}>
-              Reports
-                        </Button>
-            <Dropdown>
-              <Dropdown.Toggle>
-                Settings
-                            </Dropdown.Toggle>
-              <Dropdown.Menu>
-                <MenuItem onClick={this.navigate('settings/policies')}>
-                  Policies
-                                </MenuItem>
-                <MenuItem onClick={this.navigate('settings/network')}>
-                  Network
-                                </MenuItem>
-              </Dropdown.Menu>
-            </Dropdown>
-          </ButtonGroup> */}
         <SideNav onSelect={this.onSelect} onToggle={this.onToggle}>
           <SideNav.Toggle />
           <SideNav.Nav selected={selected}>
@@ -147,24 +119,23 @@ export default class extends PureComponent {
                 Resume
               </NavText>
             </NavItem>
-            <NavItem eventKey="contact">
-              <NavIcon>
-                <div style={{ color: '#D3D3D3' }}>
-                  <Icon size={24} icon={phone} />
-                </div>
-              </NavIcon>
-              <NavText style={{ paddingRight: 32 }} title="Contact">
-                <a href="mailto:cnnr252@gmail.com">Contact Me</a>
-              </NavText>
-            </NavItem>
           </SideNav.Nav>
         </SideNav>
         <Main className="fullmain" expanded={expanded}>
-          {this.state.selected == 'home' &&
+          {this.state.selected === 'home' &&
             <HomePage />
           }
-          {this.state.selected == 'projects/calculatesnowdays' &&
+          {this.state.selected === 'projects/calculatesnowdays' &&
             <CalculateSnowdays />
+          }
+          {this.state.selected === 'projects/website' &&
+            <PersonalWebsite />
+          }
+          {this.state.selected === 'projects/others' &&
+            <Others />
+          }
+          {this.state.selected === 'resume' &&
+            <Resume />
           }
           {/* {this.state.selected} */}
         </Main>

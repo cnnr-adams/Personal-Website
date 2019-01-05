@@ -2,9 +2,7 @@ import 'trendmicro-ui/dist/css/trendmicro-ui.css';
 import '@trendmicro/react-breadcrumbs/dist/react-breadcrumbs.css';
 import '@trendmicro/react-buttons/dist/react-buttons.css';
 import '@trendmicro/react-dropdown/dist/react-dropdown.css';
-import { Button } from '@trendmicro/react-buttons';
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Navbar from './Navbar';
 import SideNav from './Sidebar/Sidebar';
 class App extends React.Component {
@@ -23,7 +21,8 @@ class App extends React.Component {
                 <div
                     style={{
                         position: 'relative',
-                        height: 'calc(100vh - 50px)'
+                        height: 'calc(100vh - 51px)',
+                        width: 'auto'
                     }}
                 >
                     <SideNav />

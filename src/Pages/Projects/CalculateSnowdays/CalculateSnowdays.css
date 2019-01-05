@@ -39,8 +39,61 @@
     background-color: #f3f3f3;
     margin-left: 15%;
     margin-right: 15%;
+    text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 50px;
     box-shadow: 0px 0px 200px 0px #81d4fa;
+}
+.balanced {
+    padding-top: 50px;
+    height: 100%;
+  }
+.snow {
+    position: relative;
+    letter-spacing: .12em; /* Adjust as needed */
+    text-align: center;
+    font-size: 50px;
+    color: #0564ff;
+    text-decoration: underline;
+  }
+  a {
+      text-decoration: none;
+      color: #0564ff;
+      font-weight: bold;
+  }
+.description {
+    letter-spacing: .10em;
+    text-align: center;
+}
+.tech {
+    margin-top: 30px;
+    letter-spacing: .13em;
+    font-weight: bold;
+    text-align: center;
+}
+.tech-image {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width:20%;
+    margin: 10px;
+}
+.techs {
+    text-align: center;
+}
+.git {
+    color: #000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18px;
+    clear: both;
+    display: inline-block;
+}
+.github {
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: middle;
+    font-weight: bold;
+    letter-spacing: .10em;
 }
