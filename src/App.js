@@ -6,6 +6,9 @@ import React from 'react';
 import Navbar from './Navbar';
 import SideNav from './Sidebar/Sidebar';
 class App extends React.Component {
+    componentDidMount() {
+        document.title = "Connor Adams"
+    }
     state = {
         theme: 'default'
     };

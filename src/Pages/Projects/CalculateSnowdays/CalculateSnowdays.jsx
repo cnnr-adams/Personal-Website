@@ -9,7 +9,7 @@ export default class extends Component {
             <div className="full">
                 <div className="balanced">
                     <div className="box">
-                        <h1 className="snow">
+                        <h1 className="website-title">
                             <a href="http://www.calculatesnowdays.com">Snow Day Calculator</a>
                         </h1>
                         <h2 className="description">
@@ -28,7 +28,7 @@ export default class extends Component {
                             <img alt="docker" className="tech-image" src={require('../../../media/logos/docker.png')}></img>
                             <img alt="htmlcss" className="tech-image" src={require('../../../media/logos/htmlcss.png')}></img>
                             <img alt="javascript" className="tech-image" src={require('../../../media/logos/javascript.png')}></img>
-                            <img alt="lightsail" className="tech-image" src={require('../../../media/logos/lightsail.jpg')}></img>
+                            <img alt="lightsail" className="tech-image" src={require('../../../media/logos/lightsail.png')}></img>
                             <img alt="nodejs" className="tech-image" src={require('../../../media/logos/nodejs.png')}></img>
                             <img alt="python" className="tech-image" src={require('../../../media/logos/python.png')}></img>
                             <img alt="tensorflow" className="tech-image" src={require('../../../media/logos/tensorflow.png')}></img>

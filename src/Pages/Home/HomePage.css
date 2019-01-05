@@ -48,13 +48,13 @@ h1 {
     white-space: nowrap; /* Keeps the content on a single line */
     text-align: center;
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    letter-spacing: .13em; /* Adjust as needed */
     animation:
     typing 3.5s steps(50, end),
     blink-caret .75s step-end infinite;
 }
 .fade-in {
-    letter-spacing: .10em;
+    letter-spacing: .08em;
     text-align: center;
 
     opacity: 0;

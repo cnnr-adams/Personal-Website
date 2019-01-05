@@ -49,14 +49,6 @@
     padding-top: 50px;
     height: 100%;
   }
-.snow {
-    position: relative;
-    letter-spacing: .12em; /* Adjust as needed */
-    text-align: center;
-    font-size: 50px;
-    color: #0564ff;
-    text-decoration: underline;
-  }
   a {
       text-decoration: none;
       color: #0564ff;
