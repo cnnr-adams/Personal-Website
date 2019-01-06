@@ -14,7 +14,6 @@ class App extends React.Component {
     };
 
     render() {
-        console.log("here");
         const name = 'React SideNav';
         const url = 'https://github.com/trendmicro-frontend/react-sidenav';
         return (

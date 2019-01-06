@@ -54,7 +54,7 @@ h1 {
     blink-caret .75s step-end infinite;
 }
 .fade-in {
-    letter-spacing: .08em;
+    letter-spacing: .05em;
     text-align: center;
 
     opacity: 0;
@@ -93,6 +93,26 @@ h1 {
     padding-bottom: 20px;
     border-radius: 50px;
     box-shadow: 0px 0px 200px 0px #81d4fa;
+}
+@media (max-width: 1000px) {
+    .box {
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+    }
+    .typing {
+        letter-spacing: .05em !important;
+    }
+    .fade-in {
+        letter-spacing: normal;
+    }
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+}
+@media (max-width: 550px) {
+.typing {
+    animation: none !important;
+    overflow: auto !important;
+    white-space: normal;
+}
 }
 .buttons {
     padding-top: 100px;

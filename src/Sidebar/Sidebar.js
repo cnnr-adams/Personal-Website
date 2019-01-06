@@ -8,11 +8,13 @@ import { Icon } from 'react-icons-kit'
 import { home } from 'react-icons-kit/icomoon/home'
 import { pacman } from 'react-icons-kit/icomoon/pacman'
 import { fileText } from 'react-icons-kit/icomoon/fileText'
+import { user } from 'react-icons-kit/icomoon/user'
 import HomePage from '../Pages/Home/HomePage'
 import CalculateSnowdays from '../Pages/Projects/CalculateSnowdays/CalculateSnowdays';
 import PersonalWebsite from '../Pages/Projects/PersonalWebsite/PersonalWebsite';
 import Others from '../Pages/Projects/Others/Others';
 import Resume from '../Pages/Resume/Resume';
+import AboutMe from '../Pages/AboutMe/AboutMe';
 import './Sidebar.css';
 // Be sure to include styles at some point, probably during your bootstraping
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
@@ -26,11 +28,20 @@ const Main = styled.main`
 `;
 
 export default class extends PureComponent {
-  state = {
-    selected: 'home',
-    expanded: false
-  };
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      selected: 'home',
+      expanded: false,
+      width: props.width
+    };
+
+  }
+
+  componentDidMount() {
+    this.setState({ width: window.innerWidth });
+  }
   onSelect = (selected) => {
     this.setState({ selected: selected });
   };
@@ -72,7 +83,7 @@ export default class extends PureComponent {
     return (
       <div className="fulldiv">
         <SideNav onSelect={this.onSelect} onToggle={this.onToggle}>
-          <SideNav.Toggle />
+          {this.state.width >= 600 && <SideNav.Toggle />}
           <SideNav.Nav selected={selected}>
             <NavItem eventKey="home">
               <NavIcon>
@@ -84,6 +95,16 @@ export default class extends PureComponent {
                 Home
               </NavText>
             </NavItem>
+            {/* <NavItem eventKey="about">
+              <NavIcon>
+                <div style={{ color: '#D3D3D3' }}>
+                  <Icon size={24} icon={user} />
+                </div>
+              </NavIcon>
+              <NavText style={{ paddingRight: 32 }} title="About Me">
+                About Me
+              </NavText>
+            </NavItem> */}
             <NavItem eventKey="projects">
               <NavIcon>
                 <div style={{ color: '#D3D3D3' }}>
@@ -124,6 +145,9 @@ export default class extends PureComponent {
         <Main className="fullmain" expanded={expanded}>
           {this.state.selected === 'home' &&
             <HomePage />
+          }
+          {this.state.selected === 'about' &&
+            <AboutMe />
           }
           {this.state.selected === 'projects/calculatesnowdays' &&
             <CalculateSnowdays />

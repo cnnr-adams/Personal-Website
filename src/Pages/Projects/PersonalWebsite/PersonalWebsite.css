@@ -16,6 +16,12 @@ animation: AnimationName 30s ease infinite;
     font-weight: bold;
     font-size: 50px;
 }
+@media (max-width: 550px) {
+    .website-title {
+        letter-spacing: 0.05em !important;
+        font-size: 35px !important;
+    }
+    }
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}

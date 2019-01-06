@@ -12,9 +12,9 @@ export default class extends Component {
     render() {
 
         return (
-            <div>
-                <img alt="Resume" className="resume" src={require('../../media/resume-website.png')}></img>
-            </div>
+            <object className="resume" data={require("./resume.pdf")} type="application/pdf">
+                <embed className="resume" src={require("./resume.pdf")} type="application/pdf" />
+            </object>
         );
     }
 }

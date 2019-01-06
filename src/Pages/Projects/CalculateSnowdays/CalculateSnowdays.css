@@ -47,7 +47,9 @@
 }
 .balanced {
     padding-top: 50px;
+    padding-bottom: 50px;
     height: 100%;
+    overflow: auto;
   }
   a {
       text-decoration: none;
@@ -55,8 +57,13 @@
       font-weight: bold;
   }
 .description {
-    letter-spacing: .10em;
+    letter-spacing: .08em;
     text-align: center;
+}
+@media (max-width: 550px) {
+    .description {
+        letter-spacing: normal !important;
+    }
 }
 .tech {
     margin-top: 30px;
