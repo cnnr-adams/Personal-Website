@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/static/media/Interstate-ExtraLight-webfont.35071d00.eot"
   },
   {
-    "revision": "7f6e42170f2bddb999be",
-    "url": "/static/css/main.4275933c.chunk.css"
+    "revision": "c08eb83eb52c2de847f0",
+    "url": "/static/css/main.17e56bc2.chunk.css"
   },
   {
-    "revision": "c7e5de989ba4296d7f0a9c8f869d852d",
-    "url": "/static/media/resume-website.c7e5de98.png"
+    "revision": "2c48d5d6c7950003eac1e3aa72b76768",
+    "url": "/static/media/react-native.2c48d5d6.png"
   },
   {
-    "revision": "434b2d8d8e0db0003e79",
-    "url": "/static/js/1.434b2d8d.chunk.js"
+    "revision": "7adb619ef3dcab402580",
+    "url": "/static/js/1.7adb619e.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -22,6 +22,10 @@ self.__precacheManifest = [
   {
     "revision": "8ec908094ae2c2c7a8bf1c2532d5d7a8",
     "url": "/static/media/htmlcss.8ec90809.png"
+  },
+  {
+    "revision": "518cb4d976a3d6a160626b46608c12bb",
+    "url": "/static/media/resume.518cb4d9.pdf"
   },
   {
     "revision": "37f4597594857b017901209aae0a60e1",
@@ -36,20 +40,20 @@ self.__precacheManifest = [
     "url": "/static/media/Interstate-Light-webfont.d6c7e9d3.woff"
   },
   {
+    "revision": "c08eb83eb52c2de847f0",
+    "url": "/static/js/main.c08eb83e.chunk.js"
+  },
+  {
     "revision": "81436770636b45508203b3022075ae73",
     "url": "/static/media/Interstate-ExtraLight-webfont.81436770.ttf"
   },
   {
-    "revision": "7f6e42170f2bddb999be",
-    "url": "/static/js/main.7f6e4217.chunk.js"
+    "revision": "d9c6d360d27eac625da0405245ec9f0d",
+    "url": "/static/media/Interstate-Light-webfont.d9c6d360.eot"
   },
   {
     "revision": "3eff5a4e9fb92ca96cbf2fa77649b8c1",
     "url": "/static/media/Interstate-Light-webfont.3eff5a4e.ttf"
-  },
-  {
-    "revision": "d9c6d360d27eac625da0405245ec9f0d",
-    "url": "/static/media/Interstate-Light-webfont.d9c6d360.eot"
   },
   {
     "revision": "af39e41be700d6148c61a6c1ffc84215",
@@ -72,15 +76,11 @@ self.__precacheManifest = [
     "url": "/static/media/tensorflow.a1c911c4.png"
   },
   {
-    "revision": "2c48d5d6c7950003eac1e3aa72b76768",
-    "url": "/static/media/react-native.2c48d5d6.png"
+    "revision": "7adb619ef3dcab402580",
+    "url": "/static/css/1.dcb74352.chunk.css"
   },
   {
-    "revision": "434b2d8d8e0db0003e79",
-    "url": "/static/css/1.d0b36643.chunk.css"
-  },
-  {
-    "revision": "279c4a2990377494e243d8599749dc62",
+    "revision": "b44d8130d806ff769596dcdbecb1189c",
     "url": "/index.html"
   }
 ];
