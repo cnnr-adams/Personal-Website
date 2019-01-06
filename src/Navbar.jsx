@@ -16,7 +16,7 @@ export default class extends Component {
                 <div className="container-fluid">
 
                     <div className="navbar-brand">
-                        <a className="title" href="#home">Connor Adams</a>
+                        <a className="title" href="http://connoradams.me">Connor Adams</a>
                     </div>
                     <div className="right">
                         <a className="nodec" style={{ color: '#000' }} href="https://github.com/cnnr-adams">

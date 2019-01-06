@@ -4,7 +4,7 @@ export default class extends Component {
 
     render() {
         return (
-            <div className="full-o">
+            <div className="page-gradient-others">
                 <div className="balanced">
                     <div className="box">
                         <h1 className="website-title">

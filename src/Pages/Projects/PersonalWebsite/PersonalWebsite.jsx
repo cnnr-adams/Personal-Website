@@ -6,7 +6,7 @@ export default class extends Component {
 
     render() {
         return (
-            <div className="full-p">
+            <div className="page-gradient-personal">
                 <div className="balanced">
                     <div className="box">
                         <h1 className="website-title">

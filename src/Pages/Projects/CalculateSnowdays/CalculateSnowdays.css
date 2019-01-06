@@ -1,4 +1,4 @@
-.full {
+.page-gradient-snow {
     width: 100%;
     height: 100%;
     background: linear-gradient(270deg, #0564ff, #5290f3);
@@ -34,65 +34,4 @@
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
-}
-.box {
-    background-color: #f3f3f3;
-    margin-left: 15%;
-    margin-right: 15%;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 50px;
-    box-shadow: 0px 0px 200px 0px #81d4fa;
-}
-.balanced {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    height: 100%;
-    overflow: auto;
-  }
-  a {
-      text-decoration: none;
-      color: #0564ff;
-      font-weight: bold;
-  }
-.description {
-    letter-spacing: .08em;
-    text-align: center;
-}
-@media (max-width: 550px) {
-    .description {
-        letter-spacing: normal !important;
-    }
-}
-.tech {
-    margin-top: 30px;
-    letter-spacing: .13em;
-    font-weight: bold;
-    text-align: center;
-}
-.tech-image {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    width:20%;
-    margin: 10px;
-}
-.techs {
-    text-align: center;
-}
-.git {
-    color: #000;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 18px;
-    clear: both;
-    display: inline-block;
-}
-.github {
-    display: inline-block;
-    margin-left: 20px;
-    vertical-align: middle;
-    font-weight: bold;
-    letter-spacing: .10em;
 }

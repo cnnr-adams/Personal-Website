@@ -8,13 +8,14 @@ import { Icon } from 'react-icons-kit'
 import { home } from 'react-icons-kit/icomoon/home'
 import { pacman } from 'react-icons-kit/icomoon/pacman'
 import { fileText } from 'react-icons-kit/icomoon/fileText'
-import { user } from 'react-icons-kit/icomoon/user'
+// import { user } from 'react-icons-kit/icomoon/user'
 import HomePage from '../Pages/Home/HomePage'
 import CalculateSnowdays from '../Pages/Projects/CalculateSnowdays/CalculateSnowdays';
 import PersonalWebsite from '../Pages/Projects/PersonalWebsite/PersonalWebsite';
 import Others from '../Pages/Projects/Others/Others';
 import Resume from '../Pages/Resume/Resume';
 import AboutMe from '../Pages/AboutMe/AboutMe';
+import '../Pages/Projects/Projects.css';
 import './Sidebar.css';
 // Be sure to include styles at some point, probably during your bootstraping
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
