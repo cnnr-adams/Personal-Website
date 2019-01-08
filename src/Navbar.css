@@ -30,6 +30,7 @@
   padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
+  padding-right: 0;
 }
 .navbar-brand,
 .navbar-brand:hover,
@@ -42,6 +43,12 @@
 .right {
   float: right;
   padding: 5px 5px;
+  padding-left: 0;
+}
+@media (max-width: 450px) {
+  .right {
+    padding-right: 0;
+  }
 }
 .nodec {
   margin-left: 10px;
