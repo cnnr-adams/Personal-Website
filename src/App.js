@@ -10,7 +10,8 @@ class App extends React.Component {
     componentDidMount() {
         document.title = "Connor Adams"
         ReactGA.initialize('UA-131942588-1');
-        ReactGA.pageview('/homepage');
+        ReactGA.pageview('/');
+        ReactGA.pageview('');
     }
     state = {
         theme: 'default'

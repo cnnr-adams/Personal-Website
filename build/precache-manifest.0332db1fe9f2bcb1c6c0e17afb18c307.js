@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/Interstate-Light-webfont.d9c6d360.eot"
   },
   {
-    "revision": "6e4f5aad8a6be0122288",
+    "revision": "5dc464ecc7e0a01fd7fd",
     "url": "/static/css/main.e77d83f0.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/static/media/react-native.2c48d5d6.png"
   },
   {
-    "revision": "bc5d76e4a9f489e5beb9",
-    "url": "/static/js/1.bc5d76e4.chunk.js"
+    "revision": "60e6c850964a5a1c99b4",
+    "url": "/static/js/1.60e6c850.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -44,20 +44,20 @@ self.__precacheManifest = [
     "url": "/static/media/Interstate-Light-webfont.d6c7e9d3.woff"
   },
   {
-    "revision": "6e4f5aad8a6be0122288",
-    "url": "/static/js/main.6e4f5aad.chunk.js"
+    "revision": "5dc464ecc7e0a01fd7fd",
+    "url": "/static/js/main.5dc464ec.chunk.js"
   },
   {
     "revision": "37f4597594857b017901209aae0a60e1",
     "url": "/static/media/warning_red.37f45975.svg"
   },
   {
-    "revision": "af39e41be700d6148c61a6c1ffc84215",
-    "url": "/static/media/Interstate-ExtraLight-webfont.af39e41b.svg"
-  },
-  {
     "revision": "3eff5a4e9fb92ca96cbf2fa77649b8c1",
     "url": "/static/media/Interstate-Light-webfont.3eff5a4e.ttf"
+  },
+  {
+    "revision": "af39e41be700d6148c61a6c1ffc84215",
+    "url": "/static/media/Interstate-ExtraLight-webfont.af39e41b.svg"
   },
   {
     "revision": "0b39d1e64af23fe5437238402d08496a",
@@ -80,11 +80,11 @@ self.__precacheManifest = [
     "url": "/static/media/tensorflow.a1c911c4.png"
   },
   {
-    "revision": "bc5d76e4a9f489e5beb9",
+    "revision": "60e6c850964a5a1c99b4",
     "url": "/static/css/1.b5be2895.chunk.css"
   },
   {
-    "revision": "6e5f4b9c248a5c5249b96e8f3f77b785",
+    "revision": "33e1a4a0bc9e0ed0549cc6df51a7c890",
     "url": "/index.html"
   }
 ];
