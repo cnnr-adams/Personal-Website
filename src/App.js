@@ -5,9 +5,12 @@ import '@trendmicro/react-dropdown/dist/react-dropdown.css';
 import React from 'react';
 import Navbar from './Navbar';
 import SideNav from './Sidebar/Sidebar';
+import ReactGA from 'react-ga';
 class App extends React.Component {
     componentDidMount() {
         document.title = "Connor Adams"
+        ReactGA.initialize('UA-131942588-1');
+        ReactGA.pageview('/homepage');
     }
     state = {
         theme: 'default'

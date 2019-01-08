@@ -16,6 +16,7 @@ import Others from '../Pages/Projects/Others/Others';
 import Resume from '../Pages/Resume/Resume';
 import AboutMe from '../Pages/AboutMe/AboutMe';
 import '../Pages/Projects/Projects.css';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './Sidebar.css';
 // Be sure to include styles at some point, probably during your bootstraping
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
@@ -144,11 +145,12 @@ export default class extends PureComponent {
           </SideNav.Nav>
         </SideNav>
         <Main className="fullmain" expanded={expanded}>
+
           {this.state.selected === 'home' &&
             <HomePage />
           }
           {this.state.selected === 'about' &&
-            <AboutMe />
+            < AboutMe />
           }
           {this.state.selected === 'projects/calculatesnowdays' &&
             <CalculateSnowdays />
