@@ -7,7 +7,7 @@ export default class extends Component {
             <div className="main">
                 <div className="balanced">
                     <div className="box">
-                        <img alt="profile" className="circle" src={require('../../media/profile.png')}></img>
+                        <img alt="profile" className="circle" src={require('../../media/photo.JPG')}></img>
 
                         <h1 className="typing">
                             Hi! Welcome to my website.
