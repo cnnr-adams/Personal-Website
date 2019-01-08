@@ -16,7 +16,6 @@ import Others from '../Pages/Projects/Others/Others';
 import Resume from '../Pages/Resume/Resume';
 import AboutMe from '../Pages/AboutMe/AboutMe';
 import '../Pages/Projects/Projects.css';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './Sidebar.css';
 // Be sure to include styles at some point, probably during your bootstraping
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
