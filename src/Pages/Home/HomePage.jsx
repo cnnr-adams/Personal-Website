@@ -15,8 +15,8 @@ export default class extends Component {
                         <br />
                         <h2 className="fade-in">
                             I am an aspiring Software Engineer
-                            that likes side projects, designing programs,
-                            and programming in general. <br /> <br />
+                            that likes designing programs, side projects
+                            and technology in general. <br /> <br />
 
                             I'm currently studying Computer Science at the University of Waterloo.
                         </h2>

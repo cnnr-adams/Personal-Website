@@ -15,6 +15,7 @@ import PersonalWebsite from '../Pages/Projects/PersonalWebsite/PersonalWebsite';
 import Others from '../Pages/Projects/Others/Others';
 import Resume from '../Pages/Resume/Resume';
 import AboutMe from '../Pages/AboutMe/AboutMe';
+import Evego from '../Pages/Projects/Evego/Evego'
 import '../Pages/Projects/Projects.css';
 import './Sidebar.css';
 // Be sure to include styles at some point, probably during your bootstraping
@@ -52,6 +53,7 @@ export default class extends PureComponent {
 
   pageTitle = {
     'home': 'Home',
+    'projects/evego': ['Projects', 'Evego - StarterHacks'],
     'projects/calculatesnowdays': ['Projects', 'Snow Day Predictor'],
     'projects/others': ['Projects', 'Others']
   };
@@ -114,7 +116,12 @@ export default class extends PureComponent {
               </NavIcon>
               <NavText style={{ paddingRight: 32 }} title="Projects">
                 Projects
-                            </NavText>
+              </NavText>
+              <NavItem eventKey="projects/evego">
+                <NavText title="Evego">
+                  Evego - StarterHacks
+                                </NavText>
+              </NavItem>
               <NavItem eventKey="projects/calculatesnowdays">
                 <NavText title="Snow Day Predictor">
                   Snow Day Predictor
@@ -156,6 +163,9 @@ export default class extends PureComponent {
           }
           {this.state.selected === 'projects/website' &&
             <PersonalWebsite />
+          }
+          {this.state.selected === 'projects/evego' &&
+            <Evego />
           }
           {this.state.selected === 'projects/others' &&
             <Others />
